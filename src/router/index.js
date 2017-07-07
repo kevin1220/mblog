@@ -1,10 +1,9 @@
 import Router from 'vue-router'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 import Vue from 'vue'
-import MuseUI from 'muse-ui'
-import 'muse-ui/dist/muse-ui.css'
-import 'muse-ui/dist/theme-carbon.css' // 使用 carbon 主题
 import Home from '../components/Home'
-Vue.use(MuseUI)
+Vue.use(ElementUI)
 Vue.use(Router)
 
 export default new Router({

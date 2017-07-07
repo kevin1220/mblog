@@ -1,22 +1,20 @@
 <template>
-<div id="container">
+<div class="container">
   <Poster></Poster>
-  <Nav></Nav>
+  <el-col :span="12" :offset="6">
+    <el-col :span="4" :offset="0">
+      <Nav-my></Nav-my>
+    </el-col>
+  </el-col>
 </div>
 </template>
-<style type="text/css">
-  #container{
-    width:50%;
-    margin-left: 25%;
-  }
-</style>
 <script>
-  import Nav from './Nav'
   import Poster from './Poster'
+  import Nav from './Nav'
   export default {
     components: {
       Poster,
-      Nav
+      'Nav-my': Nav
     }
   }
 </script>
